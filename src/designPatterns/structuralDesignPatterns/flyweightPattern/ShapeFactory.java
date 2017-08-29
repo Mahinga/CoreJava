@@ -3,6 +3,8 @@
  */
 package designPatterns.structuralDesignPatterns.flyweightPattern;
 
+import java.util.HashMap;
+
 /**
  * @author mahsingh
  *

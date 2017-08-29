@@ -3,13 +3,15 @@
  */
 package designPatterns.structuralDesignPatterns.flyweightPattern;
 
+
+
 /**
  * @author mahsingh
  *
  */
 
 import java.awt.BorderLayout;
-import java.awt.Color;©JOURNALDEV.COM PAGE 51 OF 132
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
@@ -17,7 +19,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import com.journaldev.design.flyweight.ShapeFactory.ShapeType;
+import designPatterns.structuralDesignPatterns.flyweightPattern.ShapeFactory.ShapeType;;
 
 public class DrawingClient extends JFrame {
     private static final long serialVersionUID = -1350200437285282550L;
@@ -40,14 +42,13 @@ setVisible(true);
 startButton.addActionListener(new ActionListener() {
 public void actionPerformed(ActionEvent event) {
 Graphics g = panel.getGraphics();
-for (int i = 0; i < 20; ++i) {
+//for (int i = 0; i < 20; ++i) {
 Shape shape =
 ShapeFactory.getShape(getRandomShape());
 shape.draw(g, getRandomX(), getRandomY(),
 getRandomWidth(),
 getRandomHeight(), getRandomColor());
-© JOURNALDEV.COM PAGE 52 OF 132
-}
+//}
 }
 });
 }

@@ -2,7 +2,8 @@
  * This is test file created by developer Mahinga Singh in public interest.
  */
 package designPatterns.structuralDesignPatterns.flyweightPattern;
-
+import java.awt.Color;
+import java.awt.Graphics;
 /**
  * @author mahsingh
  *
